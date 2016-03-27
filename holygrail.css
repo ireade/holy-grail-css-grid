@@ -8,14 +8,14 @@
 .hg-header { grid-area: header; }
 .hg-footer { grid-area: footer; }
 .hg-main { grid-area: main; }
-.hg-left { grid-area: areaLeft; }
-.hg-right { grid-area: areaRight; }
+.hg-left { grid-area: navigation; }
+.hg-right { grid-area: ads; }
 
 
 .hg {
 	display: grid;
 	grid-template-areas: "header header header"
-	                     "areaLeft main areaRight"
+	                     "navigation main ads"
 	                     "footer footer footer";
 
 	grid-template-columns: 150px 1fr 150px;
@@ -32,9 +32,9 @@
 @media screen and (max-width: 600px) {
 	.hg {
 		grid-template-areas: "header"
-		                     "areaLeft"
+		                     "navigation"
 		                     "main"
-		                     "areaRight"
+		                     "ads"
 		                     "footer";
 
 		grid-template-columns: 100%;

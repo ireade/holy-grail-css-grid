@@ -1,9 +1,5 @@
-/* CSS Reset Based on -
- *    Eric Meyer's Reset CSS v2.0 (http://cssreset.com)
- *    Paul Irish's Box Sizing Reset (http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
- *    CSS Mojo's clearfix (http://cssmojo.com/latest_new_clearfix_so_far/)
- */
- 
+/* Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,46 +20,20 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Box sizing */
-
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* Clearfix */
-
-.cf:after {
-  content:"";
-  display:block;
-  clear:both;
-}
 
 
+/* Custom Styles */
 
 
 html {
@@ -81,33 +51,28 @@ p {
 	margin-bottom: 15px;
 }
 
-/* Other Styling, not related to Grid Layout */
-
-
-
 .hg-header {
 	background-color: #ffdb3a;
 	font-size: 2rem;
 	font-weight: 700;
 	font-style: italic;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
 	text-align: center;
 }
 
 .hg-footer {
 	background-color: rgb(100, 100, 100);
 	color: #fff;
+	font-size: 1.2rem;
+	font-style: italic;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.2rem;
-	font-style: italic;
 }
-
-
 
 .hg-left,
 .hg-right {
@@ -115,7 +80,7 @@ p {
 	text-align: center;
 }
 
-
+.hg-header,
 .hg-left,
 .hg-right,
 .hg-main {
